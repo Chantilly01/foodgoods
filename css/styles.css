@@ -53,10 +53,15 @@ body {
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
+    text-align: center;
 }
 
 .btn:hover {
     letter-spacing: 6px;
+}
+
+.btn:active {
+    transform: scale(.9);
 }
 
 header {
@@ -361,6 +366,11 @@ section {
     cursor: pointer;
 }
 
+.contactForm .inputBox input[type="submit"]:hover {
+    letter-spacing: 6px;
+    font-weight: 700;
+}
+
 @media (max-width: 991px) {
     header,
     header.sticky {
@@ -415,7 +425,7 @@ section {
         padding: 20px;
     }
     .banner .content h2 {
-        font-size: 3em;
+        font-size: 2.2em;
         color: #fff;
     }
     .row {
@@ -423,13 +433,34 @@ section {
     }
     .row .col150 {
         position: relative;
-        width: 48%;
+        width: 100%;
     }
-    .row .col150 imgBx {
+    .row .col150 .imgBx {
         height: 300px;
-        margin: 20px;
+        margin-top: 20px;
     }
     .menu .content {
         margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx {
+        height: 260px;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
